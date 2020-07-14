@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Under the Sea (Blog)</title>
+    <link rel="stylesheet" href="./styles/sass/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Lato&display=swap" rel="stylesheet"> 
+</head>
+
+<body id="pageBlog">
+
+    <!-- Header -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="headerNav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="headerBlogContent">
+                <div class="headerBlogTitle">
+                    <h2>Blog</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper blogContainer">
+
+            <!-- Side Article -->
+            <aside>
+                <div class="sideContainer">
+
+                    <div class="sideImage">
+                        <img src="./assets/side-blog-image.jpg" alt="Visitors viewing a shark in an aquarium.">
+                    </div>
+
+                    <div class="sideContent">
+                        <h5>About Under the Sea</h5>
+                        <p>Name dapidus nisl vite elit fringilla retrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+
+                        <h5>Recent Posts</h5>
+                            <ul>
+                                <li><p>Donec facilisis tortor ut</p></li>
+                                <li><p>Augue lacinia at viverra</p></li>
+                                <li><p>Semper sed sapien metus</p></li>
+                                <li><p>Scelerisque nec pharetra id</p></li>
+                            </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Blog Post -->
+            <div class="blogPost">
+
+                <div class="blogImage">
+                    <img src="./assets/blog-post-image.jpg" alt="Fish swimming among red corals.">
+                </div>
+
+                <div class="blogArticle">
+                    
+                    <div class="blogTitle">
+                        <h3>Discovering New Species</h3>
+                        <p class="timestamp">Monday May 4th, 2019 by Dieula</p>
+                    </div>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod commodi harum ipsum magnam mollitia, labore explicabo iusto, eum quo ex voluptas impedit enim praesentium libero amet fugiat officia? Est!
+                        Quas expedita, quis atque excepturi voluptate eaque distinctio sequi voluptatibus, mollitia accusantium sit architecto ex laudantium eos porro repellat ipsa perferendis! Quas a, dicta placeat veniam reiciendis illo ab aliquam!
+                        Dolorum aliquam harum dolores consectetur porro ullam omnis unde dolor vitae magni repellendus fuga, eius rem amet similique est odit illum, natus commodi expedita ratione vero quas vel! Corrupti, distinctio.
+                        Possimus labore animi error ratione, officia repellendus quos cupiditate nemo tempore fugit aperiam nihil adipisci laudantium architecto itaque blanditiis odio consectetur temporibus tenetur iusto officiis. Consequuntur eius dolorum debitis reprehenderit.
+                        Tempore sequi saepe consequuntur tempora vero deserunt odio, laborum, quia repellendus dignissimos corrupti qui blanditiis sed temporibus ullam quod, ducimus vel! Facilis nisi vel saepe! Eaque nemo inventore perspiciatis illum.
+                        Velit totam cupiditate tempore voluptates, hic modi magni possimus cumque facilis porro consequatur repellat voluptatibus ea aperiam maiores quisquam praesentium, veritatis a, id quae voluptas accusantium error dolorum. Ipsam, provident! </p>
+                </div>
+
+                 <!-- Blog Comments -->
+
+                <div class="blogComment">
+                    <h4>Comments:</h4>
+                    
+                    <div class="commentContainer">
+                        <div class="commentPhoto">
+                            <img src="./assets/comment-1.jpg" alt="Profile photo of a girl.">
+                        </div>
+
+                        <div class="commentText">
+                            <p class="timestamp">Tuesday October 9th, 2018 by Jeremy</p>
+                            <p>Fusce vehicle dolor arcu, sit amet blandit mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis ninc sollicitudin ultrices. donec euismon scelerisque ligula. Mecenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="commentContainer">
+                        <div class="commentPhoto">
+                            <img src="./assets/comment-2.jpg" alt="Profile photo of a girl.">
+                        </div>
+    
+                        <div class="commentText">
+                            <p class="timestamp">Tuesday October 9th, 2018 by Julia</p>
+                            <p>Fusce vehicle dolor arcu, sit amet blandit mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis ninc sollicitudin ultrices. donec euismon scelerisque ligula. Mecenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Blog Form -->
+                <div class="blogForm">
+                    <form action="commentForm">
+                        <div class="commentFlexContainer">
+                            <div>
+                                <label for="username" class="visuallyHidden">Your Name</label>
+                                <input type="text" name="username" id="username" placeholder="Name">
+                            </div>
+
+                            <div>
+                                <label for="email" class="visuallyHidden">Your Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+                        </div>
+
+                        <div class="commentBox">
+                            <label for="comment" class="visuallyHidden">Comment</label>
+                            <textarea name="comment" id="comment" cols="25" rows="7" maxlength="500" placeholder="Comment"></textarea>
+                            <button>Post Comment</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div> 
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+</body>
+</html>

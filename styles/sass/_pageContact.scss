@@ -1,0 +1,68 @@
+#pageContact {
+
+    /* Contact: Header */
+
+    header{
+        background: url(../../assets/contact-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+    }
+
+    main {
+        background-color: $dbgrey;
+
+        /* Contact: Contact Form */
+
+        .contactContainer {
+            display: flex;
+            position: relative;
+            padding: 60px 0 100px 0;
+
+            .contactForm {
+                width: 70%;
+                background-color: $spruce;
+                padding: 50px;
+                box-shadow: -35px 35px 0 -6px $robin;
+                position: absolute;
+                right: 0;
+                top: -250px;
+            }
+
+            .aside {
+                width: 30%;
+            }
+        }
+    }
+}
+
+/* Contact: Social Media */
+
+.contactInfo {
+    h4 {
+        font-size: 2.6rem;
+        padding: 20px 0;
+    }
+}
+
+.socialMedia {
+
+    ul {
+        display: flex;
+
+        li {
+            padding-right: 20px;
+
+            i {
+                @include fontSize(2rem);
+                font-weight: 400;
+            }
+        }
+    }
+}     

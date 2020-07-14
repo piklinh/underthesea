@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Under the Sea (Contact)</title>
+    <link rel="stylesheet" href="./styles/sass/styles.css">
+    <script src="https://kit.fontawesome.com/6543405859.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Lato&display=swap" rel="stylesheet"> 
+</head>
+
+<body id="pageContact">
+
+    <!--Header -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="headerNav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="headerContactContent">
+                <div class="headerContactTitle">
+                    <h2>Get in Touch</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="wrapper">
+            <div class="contactContainer">
+
+                <!-- Social Media and Address -->
+
+                <aside class="contactInfo">
+                    <div class="socialMedia">
+                        <ul>
+                            <li><a href="#Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#Twitter"></a><i class="fab fa-twitter"></i></li>
+                            <li><a href="#Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <h4>Info@email.com</h4>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </aside>
+
+                <!-- Contact Form -->
+
+                <div class="contactForm">
+                    <form action="commentForm">
+                        <div class="commentFlexContainer">
+                            <div>
+                                <label for="username" class="visuallyHidden">Your Name</label>
+                                <input type="text" name="username" id="username" placeholder="Name">
+                            </div>
+
+                            <div>
+                                <label for="email" class="visuallyHidden">Your Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                            </div>
+                        </div>
+
+                        <div class="commentBox">
+                            <label for="submit" class="visuallyHidden">Comment</label>
+                            <textarea name="submit" id="submit" cols="25" rows="7" maxlength="500" placeholder="Message"></textarea>
+                            <button class="submitButton">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+#pageBlog {
+
+    /* Blog: Header */
+
+    header {
+        background-image: url(../../assets/blog-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+    }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            padding-top: 150px;
+        }
+
+    
+    /* Blog: Content */
+
+    main {
+        background-color: $dbgrey;
+        padding-bottom: 60px;
+    }
+
+    .blogContainer {
+        display: flex;
+        padding-top: 100px;
+        
+
+        aside {
+            width: 32%;
+        }
+
+        .blogPost {
+            width: calc(68% - 90px);
+            margin-left: 90px;
+            position: relative;
+        }
+
+        .blogImage {
+            position: absolute;
+            right: -160px;
+            top: -370px;
+
+            img {
+                box-shadow: -30px 30px 0 -5px $robin;
+            }
+        }
+
+        .blogArticle {
+            margin-top: 180px;
+            padding: 100px 0 40px 50px;
+            box-shadow: -20px 20px 0 -10px $dbgrey, -38px 38px 0 -13px $robin, ;
+        
+            .timestamp {
+                padding: 0;
+            }
+
+            p {
+                padding-top: 30px;
+            }
+        }   
+
+        .sideContainer {
+            background-color: $spruce;
+            padding: 420px 10px 10px 10px;
+            position: relative;
+
+            .sideImage {
+                position: absolute;
+                top: -20px;
+                left: -160px;
+            }
+
+            .sideContent {
+                padding: 20px;
+            }
+
+            p {
+                padding: 10px 0 50px 0;
+            }
+
+            ul {
+                padding-top: 20px;
+            }
+
+            ul li {
+                list-style-type: disc; 
+                color: $white;
+                padding-left: 20px;
+            }
+
+            ul p {
+                padding: 0;
+            }
+        }
+    }
+
+    /* Blog: Comment */
+
+    .blogComment h4 {
+        padding: 80px 0 50px 0;
+    }
+
+    .commentContainer {
+        display: flex;
+        padding-bottom: 50px;
+
+        .commentPhoto {
+            width: 20%;
+        }
+
+        .commentText {
+            width: 80%;
+
+            .timestamp {
+                padding-bottom: 10px;
+            }
+        }
+        
+    }
+}

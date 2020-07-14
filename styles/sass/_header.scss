@@ -1,0 +1,26 @@
+
+nav {
+    height: 10vh;
+
+    ul {
+        @include flexrow;
+        justify-content: flex-end;
+    }
+
+        li {
+            @include fontSize(2.0rem);
+            font-family: $barlow;
+            line-height: 29px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+            a {
+                padding: 20px 30px;
+            }
+
+            a:hover {
+                color: $robin;
+            }
+
+}

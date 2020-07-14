@@ -1,0 +1,214 @@
+#pageIndex {
+
+    /* Index: Header */
+
+    header {
+        background-image: url(../../assets/header-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+
+        h1 {
+            width: 30%;
+            margin-top: 100px;
+        }
+
+        .headerImage img {
+            position: absolute;
+            right: 0;
+            top: 200px;
+        }
+
+    /* Index: About */
+
+    .about {
+        height: 100vh;
+        background-color: $dbgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+        .aboutContainer {
+            padding: 50px;
+        }
+
+        p {
+            text-align: left;
+            margin: 25px 0;
+        }
+    }
+
+    /* Index: Article */
+
+    .article {
+        height: 100%;
+        background-color: $spruce;
+        position: relative;
+    
+
+        .articleRowOne,
+        .articleRowTwo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .articleImageOne {
+            width: 50%;
+        }
+
+        .articleImageOne img {
+            box-shadow: 30px 30px 0 -5px $robin;
+            position: relative;
+            top: -35px;
+            left: 0;
+        }
+
+        .articleImageTwo img {
+            box-shadow: -30px 30px 0 -5px $robin;
+            position: relative;
+            bottom: -35px;
+            right: 0;
+        }
+
+        .articleContentOne,
+        .articleContentTwo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 60px;
+        }
+
+        .articleContentOne {
+            padding-right: 150px;
+        }
+
+        .articleContentTwo {
+            align-items: flex-end;
+            padding-left: 150px;
+        }
+
+        .articleContentTwo p {
+            text-align: right;
+        }
+
+        p {
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .readMore {
+            @include fontSize(2.0rem);
+            background-color: $dbgrey;
+        }
+
+        .readMore:hover {
+            background-color: lighten($dbgrey, 20);
+        }
+
+    }
+        
+    
+    /* Index: Extra Info */
+
+    .extraInfo {
+        height: 100vh;
+        background-color: $dbgrey;
+    }
+
+        .infoContainer {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 100px;
+        }
+
+        .infoContent {
+            width: 50%;
+            padding: 50px;
+        }
+
+        .infoTitle {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+    
+        .infoTitle i {
+            font-size: 2rem;
+            color: $dbgrey;
+            background-color: $robin;
+            padding: 15px;
+            border-radius: 100%;
+            position: absolute;
+            left: -80px;
+        }
+
+        .infoTitle h4:hover {
+            color: darken($white, 30);
+        }
+    
+    }
+    
+    /* Banner */
+
+    .bannerImage {
+        height: 60vh;
+        width: 100%;
+        background: url(../../assets/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Profile */
+
+    .profile {
+        background-color: $dbgrey;
+        height: 60vh;
+
+        .profileContainer {
+            display: flex;
+            padding-top: 80px;
+        }
+
+            .profileImage {
+                width: 25%;
+            }
+            
+            .profileImage img {
+                box-shadow: 30px 30px 0 -5px $robin;
+            }
+
+            .profileContent {
+                width: 75%;
+                padding-left: 100px;
+            }
+
+            p {
+                margin: 25px 0;
+            }
+        
+    }
+    
+    .gallery {
+        height: 70vh;
+        background-color: $spruce;
+        padding: 80px 0;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            li {
+                width: calc(100% / 3 - 30px);
+                padding-right: 10px;
+            }
+    }
+
+

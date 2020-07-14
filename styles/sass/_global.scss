@@ -1,0 +1,123 @@
+/* Stripping Styles */
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    background: none;
+    border: none;
+}
+
+input:focus {
+    background: white;
+    border: 1px solid $robin;
+}
+
+/* General Styling */
+
+h1 {
+    @include fontSize(13.8rem);
+    font-family: $barlow;
+    line-height: 126px;
+    text-transform: uppercase;
+}
+
+h2 {
+    @include fontSize(8.0rem);
+    font-family: $barlow;
+    line-height: 92px;
+    text-transform: uppercase;
+}
+
+h3 {
+    @include fontSize(4.2rem);
+    font-family: $barlow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h4 {
+    @include fontSize(3.2rem);
+    font-family: $barlow;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5 {
+    @include fontSize(2.2rem);
+    font-family: $barlow;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+p {
+    @include fontSize(2.0rem);
+    font-family: $lato;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.buttonStyle {
+    @include fontSize(2.0rem);
+    font-family: $barlow;
+    color: $dbgrey;
+    background-color: $robin;
+    text-transform: uppercase;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+}
+
+.buttonStyle:hover {
+    background-color: lighten($robin, 15);
+}
+
+.visuallyHidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+  }

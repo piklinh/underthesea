@@ -1,0 +1,55 @@
+.blogForm,
+.contactForm {
+
+    .commentFlexContainer {
+        display: flex;
+
+        div {
+            width: calc(50% - 20px);
+            justify-content: space-between;
+            margin-right: 40px;
+        }
+    }
+
+    form {
+        @include fontSize(2rem);
+        font-family: $barlow;
+
+        input, textarea {
+            width: 100%;
+            background-color: $dbgrey;
+            border-bottom: solid 1px $robin;
+            color: inherit;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        textarea {
+            border: solid 1px $robin;
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            background-color: $spruce;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        .submitButton {
+            background-color: $dbgrey;
+        }
+    }
+}
+
+.contactForm {
+    
+    form {
+        input, textarea {
+            background-color: $spruce;
+        }
+    }
+
+}
