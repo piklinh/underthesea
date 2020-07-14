@@ -482,12 +482,6 @@ footer p {
 }
 
 /* Page Styles */
-#pageIndex {
-  /* Index: Header */
-  /* Index: About */
-  /* Index: Article */
-  /* Index: Extra Info */
-}
 
 #pageIndex header {
   background-image: url(../../assets/header-image.jpg);
@@ -729,11 +723,6 @@ footer p {
   padding-right: 10px;
 }
 
-#pageBlog {
-  /* Blog: Header */
-  /* Blog: Content */
-  /* Blog: Comment */
-}
 
 #pageBlog header {
   background-image: url(../../assets/blog-header.jpg);
@@ -857,9 +846,6 @@ footer p {
   padding-bottom: 10px;
 }
 
-#pageContact {
-  /* Contact: Header */
-}
 
 #pageContact header {
   background: url(../../assets/contact-header.jpg);
@@ -925,6 +911,13 @@ footer p {
 .socialMedia ul li i {
   font-size: 2rem;
   color: #FFFFFF;
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.socialMedia ul li i:hover {
+  font-size: 2rem;
+  color: #86E0F9;
   font-weight: bold;
   font-weight: 400;
 }
@@ -1184,7 +1177,7 @@ footer p {
   }
 
   /* CONTACT PAGE QUERIES START */
-  
+
   #pageContact header h2 {
     margin-top: 0;
   }
