@@ -930,4 +930,265 @@ footer p {
 }
 
 /* Media Queries */
+
+/* MEDIA QUERIES ARE PLACED HERE BECAUSE PARTIALS WOULDN'T WORK AND I LACK THE RESOURCES TO DEBUG THE CODE. WILL LOOK INTO FIXING IT AFTER SUBMISSION */
+
+
+/* Size: 1300px */
+
+@media (max-width: 1300px) {
+
+/* INDEX PAGE QUERIES START */
+
+  #pageIndex .headerImage img {
+    display: none;
+  }
+
+  #pageIndex header {
+    height: 70vh;
+  }
+
+  #pageIndex .about {
+    height: 70vh;
+  }
+
+  #pageIndex .extraInfo {
+    height: 70vh;
+  }
+
+  #pageIndex .gallery {
+    height: 100%;
+  }
+
+  /* BLOG PAGE QUERIES START */
+
+  #pageBlog .blogContainer .blogArticle {
+    margin-top: 125px;
+  }
+
+}
+
+/* Size: 940px */
+
+@media (max-width: 940px) {
+
+  /* INDEX PAGE QUERIES START */
+
+  #pageIndex .article .articleContentOne {
+    padding-right: 10px;
+  }
+
+  #pageIndex .article .articleContentTwo{
+    padding-left: 10px;
+  }
+
+  #pageIndex .article p {
+    margin: 0;
+  }
+
+  /* BLOG PAGE QUERIES START */
+
+  #pageBlog header {
+    height: 50vh;
+  }
+
+  #pageBlog h2 {
+    padding-top: 0;
+  }
+  
+  #pageBlog .blogContainer .blogArticle {
+    margin-top: 0;
+  }
+
+  #pageBlog .commentContainer {
+    display: inherit;
+  }
+
+  /* CONTACT PAGE QUERIES START */
+
+  #pageContact header {
+    height: 50vh;
+  }
+
+  #pageContact main .contactContainer {
+    display: inherit;
+  }
+
+  #pageContact main .contactContainer .contactForm {
+    width: 100%;
+    position: static;
+  }
+
+  .contactInfo {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .socialMedia ul {
+    justify-content: center;
+  }
+}
+
+/* Size: 768px */
+
+@media (max-width: 768px) {
+
+  /* INDEX PAGE QUERIES START */
+
+  #pageIndex .article .articleRowOne, 
+  #pageIndex .article .articleRowTwo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pageIndex .article .articleContentOne, 
+  #pageIndex .article .articleContentTwo {
+    width: 100%;
+  }
+
+  #pageIndex .article p {
+    margin: 25px 0;
+  }
+
+  #pageIndex .article .articleImageOne {
+    width: 100%;
+  }
+
+  #pageIndex .article .articleImageTwo img {
+    right: -50px;
+  }
+
+  #pageIndex .extraInfo {
+    height: 100%;
+  }
+
+  #pageIndex .infoContent {
+    width: 100%;
+  }
+
+  #pageIndex .profile {
+    height: 70vh;
+  }
+
+  /* BLOG PAGE QUERIES START */
+
+  #pageBlog h2 {
+    padding-top: 100px;
+  }
+
+  #pageBlog .blogContainer .blogImage {
+    display: none;
+  }
+
+  #pageBlog .blogContainer {
+    display: inherit;
+  }
+
+  #pageBlog .blogContainer aside {
+    width: 100%;
+  }
+
+  #pageBlog .blogContainer .sideContainer .sideImage {
+    left: 50px;
+  }
+
+  #pageBlog .blogContainer .blogPost {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #pageBlog .commentContainer {
+    display: flex;
+  }
+  
+
+}
+
+/* Size: 480px */
+
+@media (max-width: 480px) {
+
+/* INDEX PAGE QUERIES START */
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  #pageIndex h1 {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 10rem;
+    
+  }
+
+  #pageIndex header {
+    height: 50vh;
+  }
+
+  #pageIndex .about {
+    height: 60vh;
+  }
+
+  #pageIndex .about .aboutContainer {
+    padding: 10px;
+  }
+
+  #pageIndex .article .articleContentOne, 
+  #pageIndex .article .articleContentTwo {
+    margin-top: 30px;
+  }
+
+  .bannerImage {
+    height: 30vh;
+  }
+
+  .profile .profileImage {
+    display: none;
+  }
+
+  .profile .profileContent {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .gallery li {
+    width: calc(100% / 2);
+  }
+
+  .gallery li:nth-child(3) {
+    display: none;
+  }
+
+  /* BLOG PAGE QUERIES START */
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  #pageBlog .blogContainer .sideContainer {
+    padding-top: 250px;
+  }
+
+  #pageBlog .commentContainer .commentText {
+    padding-left: 20px;
+  }
+
+  /* CONTACT PAGE QUERIES START */
+  
+  #pageContact header h2 {
+    margin-top: 0;
+  }
+} 
+
+
 /*# sourceMappingURL=styles.css.map */
