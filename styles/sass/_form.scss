@@ -3,12 +3,16 @@
 
     .commentFlexContainer {
         display: flex;
+        justify-content: space-between;
 
         div {
-            width: calc(50% - 20px);
-            justify-content: space-between;
-            margin-right: 40px;
+            width: 50%;
         }
+        
+        div:first-child {
+            margin-right: 20px;
+        }
+
     }
 
     form {
@@ -26,7 +30,8 @@
 
         textarea {
             border: solid 1px $robin;
-            width: 100%;
+            word-wrap: break-word;
+            resize: vertical;
         }
 
         button {

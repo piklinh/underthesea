@@ -3,7 +3,7 @@
     /* Blog: Header */
 
     header {
-        background-image: url(../../assets/blog-header.jpg);
+        background-image: url(../assets/blog-header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 80vh;
@@ -49,8 +49,7 @@
         }
 
         .blogArticle {
-            margin-top: 180px;
-            padding: 100px 0 40px 50px;
+            padding: 280px 0 40px 50px;
             box-shadow: -20px 20px 0 -10px $dbgrey, -38px 38px 0 -13px $robin, ;
         
             .timestamp {

@@ -1,0 +1,63 @@
+#pageIndex, 
+#pageBlog,
+#pageContact {
+
+
+    @media (max-width: 768px) {
+    
+        nav ul {
+            justify-content: center;
+
+            li {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        
+        nav {
+            position: relative;
+        }
+
+        .toggle {
+            display: block;
+        }
+    
+        .menu {
+            z-index: 100;
+        }
+
+        nav ul {
+            position: fixed;
+            right: 1000px;
+            top: 100px;
+            width: 30%;
+            text-align: right;
+            z-index: 100;
+            opacity: 1;
+            flex-direction: column;
+            align-items: flex-end;
+
+            a {
+                padding: 10px;
+                background-color: $robin;
+                border-radius: 10px;
+            }
+
+            a:hover {
+                border: none;
+                color: $dbgrey;
+                
+            }
+
+            a:focus {
+                color: lighten($dbgrey, 20);
+            }
+        }
+
+        .active {
+            right: 25px;
+        }
+    }
+}

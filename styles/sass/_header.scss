@@ -1,26 +1,50 @@
-
 nav {
-    height: 10vh;
-
+    height: 100px;
+    
     ul {
         @include flexrow;
         justify-content: flex-end;
     }
+    
+    li {
+        @include fontSize(2.0rem);
+        font-family: $barlow;
+        line-height: 29px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 20px 30px;
+    }
+    
+    a:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $white;
+    }
+    
+    a:focus {
+        color: $robin;
+    }
 
-        li {
-            @include fontSize(2.0rem);
-            font-family: $barlow;
-            line-height: 29px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
 
-            a {
-                padding: 20px 30px;
-            }
+    // Hamburger Menu
+    
+    .toggle {
+        width: 77%;
+        margin-top: 20px;
+        text-align: right;
+        position: fixed;
+        z-index: 100;
+        display: none;
+    }
 
-            a:hover {
-                color: $robin;
-            }
-
+    .hamburger {
+        font-size: 3rem;
+        padding: 13px 15px;
+        height: 60px;
+        width: 60px;
+        color: $white;
+        background-color: $robin;
+        border-radius: 50%;
+        border: 3px solid $white;
+        display: inline-block;
+    }
 }

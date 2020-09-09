@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under the Sea (Contact)</title>
-    <link rel="stylesheet" href="./styles/sass/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/6543405859.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Lato&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/png" href="./assets/favicon.png">
@@ -16,14 +16,21 @@
     <header>
         <div class="wrapper">
 
+            <!-- START: Fixed Nav -->
             <nav>
-                <ul class="headerNav">
+                <!-- START: Hamburger Menu for 480px -->
+                <div class="toggle">
+                    <div class="menu"><i class="fas fa-bars hamburger" aria-hidden="true" aria-label="Hamburger Menu"></i></div>
+                </div>
+                <!-- END: Hamburger Menu for 480px -->
+                <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./index.html#about">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <!-- END: Fixed Nav -->
 
             <div class="headerContactContent">
                 <div class="headerContactTitle">
@@ -62,18 +69,18 @@
                     <form action="commentForm">
                         <div class="commentFlexContainer">
                             <div>
-                                <label for="username" class="visuallyHidden">Your Name</label>
+                                <label for="username" class="srOnly">Your Name</label>
                                 <input type="text" name="username" id="username" placeholder="Name">
                             </div>
 
                             <div>
-                                <label for="email" class="visuallyHidden">Your Email</label>
+                                <label for="email" class="srOnly">Your Email</label>
                                 <input type="email" name="email" id="email" placeholder="Email Address">
                             </div>
                         </div>
 
                         <div class="commentBox">
-                            <label for="submit" class="visuallyHidden">Comment</label>
+                            <label for="submit" class="srOnly">Comment</label>
                             <textarea name="submit" id="submit" cols="25" rows="7" maxlength="500" placeholder="Message"></textarea>
                             <button class="submitButton">Submit</button>
                         </div>
@@ -89,5 +96,15 @@
         <p>Copyright © 2018 HackerYou</p>
     </footer>
 
+    <!-- Javascript Link -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('active');
+            })
+        }) 
+    </script>
 </body>
 </html>

@@ -55,7 +55,7 @@ input:focus {
 /* General Styling */
 
 h1 {
-    @include fontSize(13.8rem);
+    @include fontSize(12rem);
     font-family: $barlow;
     line-height: 126px;
     text-transform: uppercase;
@@ -112,12 +112,10 @@ p {
     background-color: lighten($robin, 15);
 }
 
-.visuallyHidden { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
-  }
+.buttonStyle:focus {
+    border: 2px solid $white;
+}
+
+section {
+    padding: 100px 0;
+}

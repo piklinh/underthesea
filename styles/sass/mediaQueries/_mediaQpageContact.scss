@@ -1,1 +1,66 @@
-/* FOR SOME REASON, THE PARTIALS WOULDN'T WORK. I AM LEAVING THESE PARTIALS HERE SO THAT I CAN WORK ON THEM AFTER THE SUBMISSION DATE */
+// Media Queries: Contact
+
+#pageContact {
+
+    @media (max-width: 940px) {
+    
+        header {
+        height: 50vh;
+        }
+    
+        main {
+            .contactContainer {
+                display: inherit;
+
+                .contactForm {
+                    width: 100%;
+                    position: static;
+                }
+            }
+        }
+    
+        .contactInfo {
+        text-align: center;
+        padding-bottom: 50px;
+        }
+    
+        .socialMedia ul {
+        justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+    
+        header h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .commentFlexContainer {
+            flex-direction: column;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        main {
+            .contactContainer {
+                .contactForm {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+
+        main {
+            .contactContainer {
+                .contactForm {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

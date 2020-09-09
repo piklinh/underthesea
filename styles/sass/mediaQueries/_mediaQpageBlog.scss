@@ -1,1 +1,105 @@
-/* FOR SOME REASON, THE PARTIALS WOULDN'T WORK. I AM LEAVING THESE PARTIALS HERE SO THAT I CAN WORK ON THEM AFTER THE SUBMISSION DATE */
+// Media Queries: Blog
+
+#pageBlog {
+    
+    @media (max-width: 1300px) {
+        .blogContainer {
+    
+            .blogImage {
+                top: -320px;
+            }
+
+        }
+    }
+
+    @media (max-width: 940px) {
+
+        h2 {
+            padding-top: 0;
+        }
+        
+        .blogContainer{ 
+
+            .blogArticle {
+                padding: 100px 0 40px 50px;
+            }
+        }
+        
+        .commentContainer {
+            display: inherit;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+
+    
+        h2 {
+        padding-top: 100px;
+        }
+    
+        .blogContainer  {
+            display: inherit;
+
+            .blogImage {
+                position: static;
+                padding-top: 100px;
+            }
+
+            .blogArticle {
+                padding: 100px 50px;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .sideContainer .sideImage {
+                left: 50px;
+            }
+
+            .blogPost {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .commentContainer {
+                display: flex;
+            }
+        }
+        
+    }
+    
+    @media (max-width: 480px) {
+    
+        nav ul {
+        justify-content: center;
+        }
+    
+        nav a {
+        padding: 10px;
+        }
+    
+        .blogContainer {
+
+            .sideContainer {
+                padding-top: 250px;
+            }
+        }
+    
+        .commentFlexContainer {
+            flex-direction: column;
+            
+            div {
+                width: 100%;
+            }
+        }
+
+        .commentContainer {
+            .commentText {
+            padding-left: 20px;
+            }    
+        } 
+    }
+
+}

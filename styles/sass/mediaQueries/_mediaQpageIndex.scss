@@ -1,1 +1,159 @@
-/* FOR SOME REASON, THE PARTIALS WOULDN'T WORK. I AM LEAVING THESE PARTIALS HERE SO THAT I CAN WORK ON THEM AFTER THE SUBMISSION DATE */
+// Media Queries: Index
+
+#pageIndex {
+    
+    
+    @media (max-width: 940px) {
+
+        .headerImage img {
+            max-width: 450px;
+            bottom: 0;
+        }
+    
+        .article .articleContentOne {
+        padding-right: 10px;
+        }
+    
+        .article .articleContentTwo{
+        padding-left: 10px;
+        }
+    
+        .article p {
+        margin: 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+
+        .article {
+            .articleRowOne, 
+            .articleRowTwo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .articleRowTwo {
+                flex-direction: column-reverse;
+            }
+
+            .articleImageOne,
+            .articleImageTwo,
+            .articleContentOne, 
+            .articleContentTwo {
+                width: 100%;
+                padding: 60px;
+                margin: auto 0;
+                align-items: center;
+            }
+
+            .articleImageOne {
+                width: 100%;
+            }
+
+            .articleImageOne img,
+            .articleImageTwo img {
+                position: static;
+            }
+
+            .articleContentOne p,
+            .articleContentTwo p {
+                text-align: center;
+                padding: 30px 0;
+            }
+        }
+    
+        .extraInfo {
+            height: 100%;
+        }
+
+        .infoContent {
+            width: 100%;
+        }
+
+        .profile {
+
+            .profileContainer {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            
+            .profileImage {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        
+            .profileContent {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+
+        .gallery {
+
+            ul {
+                flex-direction: column;
+                
+                li {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 480px) {
+
+        .headerContent {
+            width: 100%;
+        }
+    
+        h1 {
+            font-size: 7rem;
+            text-align: center;
+            line-height: 1.2;
+            margin-top: 0;
+        }
+    
+        .headerImage img {
+            width: 80%;
+        }
+
+        .about {
+            .aboutContainer {
+                padding: 10px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }    
+    }
+    
+    @media (max-width: 320px) {
+
+        .article {
+
+            .articleImageOne,
+            .articleImageTwo,
+            .articleContentOne, 
+            .articleContentTwo {
+                padding: 60px 0;
+            }
+        }
+
+        .infoTitle i {
+            display: none;
+        }
+
+        .infoContent {
+            padding: 50px 0;
+        }
+
+
+    }
+
+}

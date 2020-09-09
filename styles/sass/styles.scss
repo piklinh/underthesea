@@ -1,19 +1,16 @@
-/* Global */
 @import 'setup';
 @import 'variables';
 
-/* Standard Styles */
 @import 'global';
 @import 'header';
-@import 'footer';
 @import 'form';
+@import 'footer';
 
-/* Page Styles */
 @import 'pageIndex';
 @import 'pageBlog';
 @import 'pageContact';
 
-/* Media Queries */
 @import "mediaQueries/mediaQpageIndex";
 @import 'mediaQueries/mediaQpageBlog';
 @import 'mediaQueries/mediaQpageContact';
+@import "mediaQueries/mediaQNavigation";
