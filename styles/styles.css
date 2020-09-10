@@ -1168,9 +1168,6 @@ footer p {
 }
 
 @media (max-width: 940px) {
-  #pageContact header {
-    height: 50vh;
-  }
   #pageContact main .contactContainer {
     display: inherit;
   }
